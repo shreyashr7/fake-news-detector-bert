@@ -51,3 +51,6 @@ artifacts/**/*.png
 # OS
 .DS_Store
 Thumbs.db
+
+# Local/internal notes
+context.md
