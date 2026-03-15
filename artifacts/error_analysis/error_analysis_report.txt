@@ -1,0 +1,30 @@
+Day 7 - Error Analysis Report
+================================
+
+1) Diagnostic Summary
+- Total rows analyzed: 11578
+- Correct predictions: 11573
+- Total errors: 5
+- False positives: 0
+- False negatives: 5
+- Error rate: 0.0004
+
+2) Pattern Recognition
+- Satire signal frequency in errors: 0.0000 (correct baseline: 0.0411)
+- Biased-language signal frequency in errors: 0.2000 (correct baseline: 0.3775)
+- Interpretation: errors concentrate where context is ambiguous, sarcastic, or strongly opinionated.
+
+3) False Positive Samples (Real -> Predicted Fake)
+- No false positives found in this evaluation set.
+
+4) False Negative Samples (Fake -> Predicted Real)
+- FN#1: prob_fake=0.0044 | satire=False | bias=False | text="neil gorsuch, president donald trump's appointee to the u.s. supreme court who was confirmed by the senate to the lifetime job on friday in a 54-45 vote, will have an immediate impact on cases already pending before the justices. the nine-s..."
+- FN#2: prob_fake=0.0123 | satire=False | bias=False | text="global health officials are racing to better understand the zika virus behind a major outbreak that began in brazil last year and has spread to many countries in the americas. the following are some questions and answers about the virus and..."
+- FN#3: prob_fake=0.0013 | satire=False | bias=True | text="gop leaders have unleashed a stunning level of vitriol against their party's most successful presidential candidate. house speaker paul ryan (r-wis.), emphatically declared last week that he was not ready to endorse donald trump, his party'..."
+- FN#4: prob_fake=0.0027 | satire=False | bias=False | text="in a speech weighted with america's complicated racial history, democrat hillary clinton laced into republican presidential rival donald trump on wednesday, accusing him of fueling divisions among americans over race and religion. "his camp..."
+- FN#5: prob_fake=0.0071 | satire=False | bias=False | text="washington the clock began running out this week on a strategy that has provided u.s. republicans in congress with their only notable legislative successes this year: aggressive use of an obscure u.s. law known as the congressional review a..."
+
+5) Improvement Guidance
+- Expand training coverage for satire/parody examples to reduce sarcastic-context confusion.
+- Add biased and opinionated writing samples with balanced labels to improve contextual calibration.
+- Consider threshold tuning using precision-recall trade-offs from Day 5 outputs.

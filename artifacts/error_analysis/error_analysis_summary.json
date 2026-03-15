@@ -1,0 +1,20 @@
+{
+  "model_dir": "artifacts\\model_improved\\best_model",
+  "test_csv": "artifacts\\data_splits\\val_test_combined.csv",
+  "rows_total": 11578,
+  "rows_correct": 11573,
+  "rows_error": 5,
+  "error_rate": 0.00043185351528761444,
+  "false_positive_count": 0,
+  "false_negative_count": 5,
+  "satire_signal_rate_in_errors": 0.0,
+  "bias_signal_rate_in_errors": 0.2,
+  "satire_signal_rate_in_correct": 0.041130216884126845,
+  "bias_signal_rate_in_correct": 0.37751663354359283,
+  "artifacts": {
+    "full_results_csv": "artifacts\\error_analysis\\test_predictions_with_errors.csv",
+    "false_positives_sample_csv": "artifacts\\error_analysis\\false_positives_sample.csv",
+    "false_negatives_sample_csv": "artifacts\\error_analysis\\false_negatives_sample.csv",
+    "error_analysis_report": "artifacts\\error_analysis\\error_analysis_report.txt"
+  }
+}

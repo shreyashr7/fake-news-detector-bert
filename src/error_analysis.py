@@ -124,7 +124,7 @@ def generate_error_report(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     lines: List[str] = []
-    lines.append("Day 6 - Error Analysis Report")
+    lines.append("Day 7 - Error Analysis Report")
     lines.append("================================")
     lines.append("")
     lines.append("1) Diagnostic Summary")

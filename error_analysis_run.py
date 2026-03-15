@@ -22,7 +22,7 @@ from src.error_analysis import (
 
 
 def parse_args() -> Day6Config:
-    parser = argparse.ArgumentParser(description="Day 6: Error analysis on model misclassifications")
+    parser = argparse.ArgumentParser(description="Day 7: Error analysis on model misclassifications")
     parser.add_argument("--test-csv", type=Path, default=Path("artifacts/data_splits/test.csv"))
     parser.add_argument("--model-dir", type=Path, default=Path("artifacts/model_improved/best_model"))
     parser.add_argument("--output-dir", type=Path, default=Path("artifacts/error_analysis"))
