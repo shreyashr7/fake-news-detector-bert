@@ -1,0 +1,54 @@
+{
+  "model_dir": "artifacts\\model_improved\\best_model",
+  "eval_csv": "artifacts\\data_splits\\val.csv",
+  "rows_evaluated": 3859,
+  "accuracy": 0.9992225965275978,
+  "precision": 1.0,
+  "recall": 0.9985842378480415,
+  "f1_score": 0.9992916174734356,
+  "confusion_counts": {
+    "tn": 1740,
+    "fp": 0,
+    "fn": 3,
+    "tp": 2116
+  },
+  "confusion_rates": {
+    "tn_rate": 0.4508940139932625,
+    "fp_rate": 0.0,
+    "fn_rate": 0.0007774034724021767,
+    "tp_rate": 0.5483285825343354
+  },
+  "classification_report": {
+    "Fake": {
+      "precision": 0.9982788296041308,
+      "recall": 1.0,
+      "f1-score": 0.9991386735572783,
+      "support": 1740.0
+    },
+    "Real": {
+      "precision": 1.0,
+      "recall": 0.9985842378480415,
+      "f1-score": 0.9992916174734356,
+      "support": 2119.0
+    },
+    "accuracy": 0.9992225965275978,
+    "macro avg": {
+      "precision": 0.9991394148020654,
+      "recall": 0.9992921189240207,
+      "f1-score": 0.999215145515357,
+      "support": 3859.0
+    },
+    "weighted avg": {
+      "precision": 0.9992239345714402,
+      "recall": 0.9992225965275978,
+      "f1-score": 0.9992226559771635,
+      "support": 3859.0
+    }
+  },
+  "artifacts": {
+    "confusion_matrix_plot": "artifacts\\evaluation_optimized\\confusion_matrix.png",
+    "precision_recall_curve_plot": "artifacts\\evaluation_optimized\\precision_recall_curve.png",
+    "threshold_analysis_csv": "artifacts\\evaluation_optimized\\threshold_analysis.csv",
+    "classification_report_txt": "artifacts\\evaluation_optimized\\classification_report.txt"
+  }
+}
