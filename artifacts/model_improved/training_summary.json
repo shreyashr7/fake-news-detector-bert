@@ -1,0 +1,20 @@
+{
+  "model_name": "bert-base-uncased",
+  "epochs_requested": 8,
+  "epochs_completed": 3,
+  "early_stopping_patience": 2,
+  "scheduler_patience": 1,
+  "scheduler_factor": 0.5,
+  "batch_size": 8,
+  "learning_rate": 2e-05,
+  "final_train_loss": 0.0029451095082682235,
+  "final_val_loss": 0.0049922787068004916,
+  "final_val_accuracy": 0.9987043275459964,
+  "best_epoch": 1,
+  "best_val_accuracy": 0.9992225965275978,
+  "best_val_loss": 0.005439625561404125,
+  "early_stopped": true,
+  "best_model_dir": "artifacts\\day4\\best_model",
+  "final_model_dir": "artifacts\\day4\\model_final",
+  "training_log_csv": "artifacts\\day4\\training_log.csv"
+}

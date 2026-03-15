@@ -36,6 +36,7 @@ artifacts/**/*.png
 !artifacts/**/validation_summary.json
 !artifacts/**/classification_report.txt
 !artifacts/**/threshold_analysis.csv
+!artifacts/**/training_log.csv
 
 # Model weights and checkpoints
 *.pt

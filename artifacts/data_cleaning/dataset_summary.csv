@@ -1,0 +1,8 @@
+metric,value
+num_rows,38591
+num_columns,3
+imbalance_ratio_major_to_minor,1.2179
+avg_text_length,2459.32
+median_text_length,2230.0
+min_text_length,5
+max_text_length,51794
