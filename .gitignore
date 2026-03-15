@@ -18,7 +18,24 @@ env/
 
 # Data and artifacts
 /data/
-artifacts/
+artifacts/*
+!artifacts/**/
+artifacts/**/*.csv
+artifacts/**/*.json
+artifacts/**/*.txt
+artifacts/**/*.png
+!artifacts/**/dataset_summary.csv
+!artifacts/**/label_distribution.csv
+!artifacts/**/sample_entries.csv
+!artifacts/**/splits_summary.json
+!artifacts/**/evaluation_summary.json
+!artifacts/**/eval_summary.json
+!artifacts/**/error_analysis_summary.json
+!artifacts/**/baseline_summary.json
+!artifacts/**/training_summary.json
+!artifacts/**/validation_summary.json
+!artifacts/**/classification_report.txt
+!artifacts/**/threshold_analysis.csv
 
 # Model weights and checkpoints
 *.pt
