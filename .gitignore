@@ -32,6 +32,7 @@ artifacts/**/*.png
 !artifacts/**/eval_summary.json
 !artifacts/**/error_analysis_summary.json
 !artifacts/**/baseline_summary.json
+!artifacts/**/baseline_comparison.json
 !artifacts/**/training_summary.json
 !artifacts/**/validation_summary.json
 !artifacts/**/classification_report.txt

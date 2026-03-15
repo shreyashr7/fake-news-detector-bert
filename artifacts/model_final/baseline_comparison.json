@@ -1,0 +1,22 @@
+{
+  "baseline_summary_json": "artifacts\\day5\\day5_summary.json",
+  "improved_summary_json": "artifacts\\day7\\evaluation\\day7_eval_summary.json",
+  "baseline_metrics": {
+    "accuracy": 0.9992225965275978,
+    "precision": 1.0,
+    "recall": 0.9985842378480415,
+    "f1_score": 0.9992916174734356
+  },
+  "improved_metrics": {
+    "accuracy": 0.9992225965275978,
+    "precision": 1.0,
+    "recall": 0.9985842378480415,
+    "f1_score": 0.9992916174734356
+  },
+  "delta_metrics": {
+    "accuracy": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0
+  }
+}
