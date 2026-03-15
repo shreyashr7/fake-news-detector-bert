@@ -1,4 +1,4 @@
-Day 7 - Error Analysis Report
+Error Analysis Report
 ================================
 
 1) Diagnostic Summary
@@ -27,4 +27,4 @@ Day 7 - Error Analysis Report
 5) Improvement Guidance
 - Expand training coverage for satire/parody examples to reduce sarcastic-context confusion.
 - Add biased and opinionated writing samples with balanced labels to improve contextual calibration.
-- Consider threshold tuning using precision-recall trade-offs from Day 5 outputs.
+- Consider threshold tuning using precision-recall trade-offs from evaluation outputs.

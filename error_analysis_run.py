@@ -22,7 +22,7 @@ from src.error_analysis import (
 
 
 def parse_args() -> Day6Config:
-    parser = argparse.ArgumentParser(description="Day 7: Error analysis on model misclassifications")
+    parser = argparse.ArgumentParser(description="Error analysis on model misclassifications")
     parser.add_argument("--test-csv", type=Path, default=Path("artifacts/data_splits/test.csv"))
     parser.add_argument("--model-dir", type=Path, default=Path("artifacts/model_improved/best_model"))
     parser.add_argument("--output-dir", type=Path, default=Path("artifacts/error_analysis"))
@@ -68,7 +68,7 @@ def resolve_test_csv_path(test_csv: Path) -> Path:
     raise FileNotFoundError(f"Could not find test CSV: {test_csv}")
 
 
-def run_day6_pipeline(config: Day6Config, device: torch.device) -> None:
+def run_error_analysis_pipeline(config: Day6Config, device: torch.device) -> None:
     print("\n=== Error Analysis ===")
 
     config.output_dir.mkdir(parents=True, exist_ok=True)
@@ -171,7 +171,7 @@ def run_day6_pipeline(config: Day6Config, device: torch.device) -> None:
 def main() -> None:
     config = parse_args()
     device = print_device_info()
-    run_day6_pipeline(config, device)
+    run_error_analysis_pipeline(config, device)
 
 
 if __name__ == "__main__":

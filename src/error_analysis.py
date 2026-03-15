@@ -124,7 +124,7 @@ def generate_error_report(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     lines: List[str] = []
-    lines.append("Day 7 - Error Analysis Report")
+    lines.append("Error Analysis Report")
     lines.append("================================")
     lines.append("")
     lines.append("1) Diagnostic Summary")
@@ -172,6 +172,6 @@ def generate_error_report(
     lines.append("5) Improvement Guidance")
     lines.append("- Expand training coverage for satire/parody examples to reduce sarcastic-context confusion.")
     lines.append("- Add biased and opinionated writing samples with balanced labels to improve contextual calibration.")
-    lines.append("- Consider threshold tuning using precision-recall trade-offs from Day 5 outputs.")
+    lines.append("- Consider threshold tuning using precision-recall trade-offs from evaluation outputs.")
 
     output_path.write_text("\n".join(lines), encoding="utf-8")
