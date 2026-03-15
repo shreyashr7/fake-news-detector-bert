@@ -52,6 +52,30 @@ Build a binary fake-news detector that classifies a news headline/article senten
    streamlit run streamlit_app.py
    ```
 
+## Optional commands
+### 1) Quick device check
+```bash
+python -c "import torch; print('cuda:', torch.cuda.is_available(), 'cuda_version:', torch.version.cuda)"
+```
+
+### 2) Full pipeline (from raw data)
+```bash
+python data_prep.py
+python tokenize_and_split.py
+python baseline_train.py
+python improve_model.py
+python optimized_train.py
+python evaluate_model.py
+python error_analysis_run.py
+python validate_predictions.py
+```
+
+### 3) Evaluate-only (no retraining)
+```bash
+python evaluate_model.py
+python validate_predictions.py
+```
+
 ## GPU setup (optional)
 If you want GPU acceleration, install CUDA-compatible PyTorch (example for CUDA 13.1):
 ```bash
