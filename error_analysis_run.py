@@ -55,12 +55,26 @@ def print_device_info() -> torch.device:
     return device
 
 
+def resolve_test_csv_path(test_csv: Path) -> Path:
+    if test_csv.exists():
+        return test_csv
+
+    if not test_csv.is_absolute():
+        fallback = Path("artifacts/data_splits") / test_csv.name
+        if fallback.exists():
+            print(f"Resolved --test-csv to: {fallback}")
+            return fallback
+
+    raise FileNotFoundError(f"Could not find test CSV: {test_csv}")
+
+
 def run_day6_pipeline(config: Day6Config, device: torch.device) -> None:
     print("\n=== Error Analysis ===")
 
     config.output_dir.mkdir(parents=True, exist_ok=True)
 
-    test_df = pd.read_csv(config.test_csv)
+    resolved_test_csv = resolve_test_csv_path(config.test_csv)
+    test_df = pd.read_csv(resolved_test_csv)
     print(f"Test rows       : {len(test_df)}")
 
     tokenizer = AutoTokenizer.from_pretrained(config.model_dir)
@@ -117,7 +131,7 @@ def run_day6_pipeline(config: Day6Config, device: torch.device) -> None:
 
     summary = {
         "model_dir": str(config.model_dir),
-        "test_csv": str(config.test_csv),
+        "test_csv": str(resolved_test_csv),
         "rows_total": stats["rows_total"],
         "rows_correct": stats["rows_correct"],
         "rows_error": stats["rows_error"],
