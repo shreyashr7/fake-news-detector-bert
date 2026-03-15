@@ -62,6 +62,3 @@ Then verify:
 ```bash
 python -c "import torch; print(torch.cuda.is_available(), torch.version.cuda)"
 ```
-
-## Colab
-Clone repo and run same commands in Colab after installing requirements. Use `/content` paths and a GPU runtime.
